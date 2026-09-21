@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org
@@ -31,12 +31,5 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-
-      # Temporary
-      - name: Debug OIDC identity
-        run: |
-          echo "Repository: $GITHUB_REPOSITORY"
-          echo "Workflow Ref: $GITHUB_WORKFLOW_REF"
-          echo "Ref: $GITHUB_REF"    
 
       - run: npm publish --provenance --access public        
