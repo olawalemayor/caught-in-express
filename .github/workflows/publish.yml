@@ -5,6 +5,13 @@ on:
     tags:
       - "v*"
 
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run npm publish in dry-run mode"
+        type: boolean
+        default: true
+
 jobs:
   publish:
     runs-on: ubuntu-latest
