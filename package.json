@@ -1,6 +1,6 @@
 {
   "name": "caught-in-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight TypeScript-first error handling middleware for Express 5.",
   "license": "MIT",
   "author": {
