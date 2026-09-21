@@ -1,4 +1,4 @@
-# express-error-handler
+# caught-in-express
 
 > A lightweight, TypeScript-first error handling package for **Express 5**.
 
@@ -24,7 +24,7 @@ if (!user) {
 ## Installation
 
 ```bash
-npm install express-error-handler
+npm install caught-in-express
 ```
 
 **Requirements**
@@ -40,7 +40,7 @@ npm install express-error-handler
 
 ```ts
 import express from "express";
-import { errorHandler } from "express-error-handler";
+import { errorHandler } from "caught-in-express";
 
 const app = express();
 
@@ -55,7 +55,7 @@ app.listen(3000);
 ### Throw errors in your routes
 
 ```ts
-import { NotFoundError, BadRequestError } from "express-error-handler";
+import { NotFoundError, BadRequestError } from "caught-in-express";
 
 app.get("/users/:id", async (req, res) => {
   const user = await findUser(req.params.id);
@@ -176,7 +176,7 @@ The client receives a clean response while the original error is preserved inter
 Customize the response shape globally.
 
 ```ts
-import { errorHandler } from "express-error-handler";
+import { errorHandler } from "caught-in-express";
 
 app.use(
   errorHandler({
@@ -240,7 +240,7 @@ Express 5 automatically forwards rejected promises from async route handlers.
 This package also exports an optional `asyncHandler()` utility for compatibility with Express 4 or projects that prefer wrapping handlers.
 
 ```ts
-import { asyncHandler, NotFoundError } from "express-error-handler";
+import { asyncHandler, NotFoundError } from "caught-in-express";
 
 app.get(
   "/users/:id",
@@ -263,7 +263,7 @@ app.get(
 The package ships with type declarations out of the box.
 
 ```ts
-import { HttpError, NotFoundError } from "express-error-handler";
+import { HttpError, NotFoundError } from "caught-in-express";
 
 try {
   throw NotFoundError("User");
@@ -328,7 +328,7 @@ Wraps asynchronous Express handlers and forwards rejected promises to the error 
 
 ## Project Status
 
-`express-error-handler` currently supports **Express 5** and is designed for modern TypeScript projects running on **Node.js 22 LTS or later**.
+`caught-in-express` currently supports **Express 5** and is designed for modern TypeScript projects running on **Node.js 22 LTS or later**.
 
 Contributions and issues are welcome.
 

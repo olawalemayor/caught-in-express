@@ -1,5 +1,5 @@
 {
-  "name": "express-error-handler",
+  "name": "caught-in-express",
   "version": "1.0.3",
   "description": "A lightweight TypeScript-first error handling middleware for Express 5.",
   "license": "MIT",
@@ -24,11 +24,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olawalemayor/express-error-handler.git"
+    "url": "git+https://github.com/olawalemayor/caught-in-express.git"
   },
-  "homepage": "https://github.com/olawalemayor/express-error-handler#readme",
+  "homepage": "https://github.com/olawalemayor/caught-in-express#readme",
   "bugs": {
-    "url": "https://github.com/olawalemayor/express-error-handler/issues"
+    "url": "https://github.com/olawalemayor/caught-in-express/issues"
   },
   "keywords": [
     "express",
