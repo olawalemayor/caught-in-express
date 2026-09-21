@@ -1,0 +1,37 @@
+{
+  "name": "express-error-handler",
+  "version": "1.0.0",
+  "description": "TypeScript-first error handling middleware for Express.",
+  "license": "MIT",
+  "author": {
+    "name": "Olawale Mayor",
+    "email": "olawalemayor90@gmail.com",
+    "url": "https://olawalemayor.com"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node --test"
+  },
+  "peerDependencies": {
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
+    "typescript": "^5.9.2"
+  }
+}
