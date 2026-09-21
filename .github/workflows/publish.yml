@@ -25,4 +25,11 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      # Temporary
+      - name: Debug OIDC identity
+        run: |
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Workflow Ref: $GITHUB_WORKFLOW_REF"
+          echo "Ref: $GITHUB_REF"    
+
       - run: npm publish --provenance --access public        
